@@ -83,3 +83,8 @@ nav a:hover {
 .shopping-cart {
   align-items: flex-end;
 }
+
+#homeLink {
+  text-decoration: none;
+  color: black;
+}
