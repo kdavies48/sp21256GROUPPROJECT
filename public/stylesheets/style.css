@@ -82,3 +82,62 @@ nav a:hover {
 .shopping-cart {
   align-items: flex-end;
 }
+
+#shop {
+  height: 500;
+  width: auto;
+  display: inline-block;
+  z-index: 1;
+}
+
+.shop {
+  width: 100%;
+  padding: 0;
+}
+
+#btn {
+  z-index: 5;
+  position: absolute;
+}
+
+
+#shop1 {
+  float: left;
+  z-index: 1;
+}
+#shop2 {
+  text-align: center;
+  z-index: 1;
+}
+#shop3 {
+  float: right;
+  z-index: 1;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align:center;
+  text-decoration: none;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 460px;
+  text-decoration: none;
+}
+
