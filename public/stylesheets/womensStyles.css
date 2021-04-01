@@ -1,0 +1,21 @@
+
+h1{
+    font-family: Berlin;
+  }
+  #womensMenu {
+    word-spacing: 40px;
+    font-weight: 100;
+    font-size: 32px;
+    position: relative;
+    left: 650px;
+    width: fit-content;
+    height: fit-content;
+    top: -20px;
+  }
+  .womensTypes:hover {
+    text-decoration: underline;
+  }
+  
+  .womensTypes {
+    display: inline;
+  }
