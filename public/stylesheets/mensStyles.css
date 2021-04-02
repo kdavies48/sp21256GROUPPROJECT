@@ -1,0 +1,31 @@
+#mensHeader {
+    font-size: 60px;
+}
+
+#mensMenu {
+    word-spacing: 40px;
+    font-weight: 100;
+    font-size: 32px;
+    position: relative;
+    left: 650px;
+    width: fit-content;
+    height: fit-content;
+    top: -20px;
+}
+
+.mensTypes:hover {
+    text-decoration: underline;
+}
+
+.mensTypes {
+    display: inline;
+}
+
+#mensClothingContainer{
+    border: solid;
+    position: relative;
+    height: 700px;
+    margin: auto;
+    width: 900px;
+    top: -20px;
+}
