@@ -128,10 +128,6 @@ nav a:hover {
   position: relative;
 }
 
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
 
 .img-overlay {
   position: absolute;
