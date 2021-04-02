@@ -7,25 +7,44 @@
     font-weight: 100;
     font-size: 32px;
     position: relative;
-    left: 650px;
+    left: 620px;
     width: fit-content;
     height: fit-content;
     top: -20px;
 }
 
-.mensTypes:hover {
-    text-decoration: underline;
+#mensMenu > li:hover {
+    background-color: lightblue;
 }
 
-.mensTypes {
+#mensMenu > li {
     display: inline;
+    border: solid 2px;
+    margin: 2px;
+    padding: 3px;
 }
 
 #mensClothingContainer{
-    border: solid;
+    border: solid 3px;
+    background-color: lightblue;
     position: relative;
     height: 700px;
     margin: auto;
-    width: 900px;
+    padding: 5px;
+    width: fit-content;
     top: -20px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+#mensClothingContainer > div {
+    border: solid black 2px;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
 }
