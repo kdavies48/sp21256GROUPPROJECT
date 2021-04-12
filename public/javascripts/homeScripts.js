@@ -2,6 +2,7 @@ $(document).ready(function() {
     console.log("success");
     changeColor();
     addEmail();
+    doAjaxRequest();
 });
 
 function displayTitle(name) {
@@ -27,4 +28,22 @@ function addEmail() {
         console.log("no email provided by user");
     }
 
+}
+
+const countEl = document.getElementById('count');
+
+
+function doAjaxRequest() {
+    $.ajax({
+        type: 'GET',
+        url: 'https://api.countapi.xyz/update/faith-bacci/vscode/?amount=1'
+    }).done(function(response){
+        console.log(response);
+        displayData(response);
+    })
+}
+
+function displayData(data) {
+    let content = $('#count');
+    content.append($(`<p>${data.value} times.<p>`));
 }

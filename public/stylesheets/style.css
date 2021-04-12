@@ -141,3 +141,8 @@ nav a:hover {
   text-decoration: none;
 }
 
+#site-counter {
+  text-align: center;
+  padding-top: 150px;
+  color:rgba(128, 128, 128, 0.66)
+}
