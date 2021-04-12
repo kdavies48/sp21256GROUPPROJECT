@@ -7,7 +7,7 @@ h1{
     word-spacing: 40px;
     font-weight: 100;
     font-size: 32px;
-    position:relative;
+    position:fixed;
     left: 500px;
     width: fit-content;
     height: fit-content;
