@@ -7,11 +7,11 @@ h1{
     word-spacing: 40px;
     font-weight: 100;
     font-size: 32px;
-    position:fixed;
-    left: 500px;
+    position:relative; 
+    left: 520px;
     width: fit-content;
     height: fit-content;
-    top: -20px;
+    top: 15px;
   }
   .womensTypes:hover {
     text-decoration: underline;
