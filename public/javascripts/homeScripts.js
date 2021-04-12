@@ -23,7 +23,8 @@ function addEmail() {
     if (email != null) {
         console.log(email);
         alert("Thank you! Check your inbox for your discount code!");
-    } else if(email === emptyString || email === null) {
+    } else if( email === null) {
         console.log("no email provided by user");
     }
+
 }
