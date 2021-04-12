@@ -1,6 +1,6 @@
 .header {
   text-align: center;
-  /*font-family: Berlin;*/
+  color: blue;
   padding: 1%;
 }
 
@@ -13,7 +13,6 @@ nav {
   width: 1200px;
   height: auto;
   margin: auto
-  
 }
 
 nav ul {
@@ -93,6 +92,7 @@ nav a:hover {
   align-items: flex-end;
 }
 
+
 #shop {
   height: 500;
   width: auto;
@@ -128,6 +128,10 @@ nav a:hover {
   position: relative;
 }
 
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
 
 .img-overlay {
   position: absolute;
@@ -142,7 +146,13 @@ nav a:hover {
 .img-overlay:before {
   content: ' ';
   display: block;
-  /* adjust 'height' to position overlay content vertically */
   height: 460px;
   text-decoration: none;
+}
+
+#site-counter {
+  text-align: center;
+  padding-top: 150px;
+  color:rgba(128, 128, 128, 0.66)
+
 }
