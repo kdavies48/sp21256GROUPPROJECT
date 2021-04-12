@@ -1,9 +1,11 @@
 $(document).ready(function() {
     console.log("success");
+    newMember();
 })
 
 function newMember(){
     var members = new Array();
+    var txt;
     if (confirm("Would you like to become a member of Fair Fashion?")){
         var name = prompt("Please enter your name", "John Doe");
         if (name == null || name == ""){
@@ -44,6 +46,9 @@ function newMember(){
                 }
             }
         }
+    }
+    else {
+        txt = "You can sign up at any moment.";
     }
 }
 
