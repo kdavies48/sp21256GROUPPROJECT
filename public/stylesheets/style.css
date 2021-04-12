@@ -83,6 +83,16 @@ nav a:hover {
   align-items: flex-end;
 }
 
+#homeLink {
+  text-decoration: none;
+  color: black;
+}
+
+.shopping-cart {
+  align-items: flex-end;
+}
+
+
 #shop {
   height: 500;
   width: auto;
@@ -136,7 +146,6 @@ nav a:hover {
 .img-overlay:before {
   content: ' ';
   display: block;
-  /* adjust 'height' to position overlay content vertically */
   height: 460px;
   text-decoration: none;
 }
@@ -145,4 +154,5 @@ nav a:hover {
   text-align: center;
   padding-top: 150px;
   color:rgba(128, 128, 128, 0.66)
+
 }
