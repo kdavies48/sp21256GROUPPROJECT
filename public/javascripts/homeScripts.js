@@ -10,6 +10,8 @@ function displayTitle(name) {
 
 function changeColor() {
     let title = document.getElementById("myHeader");
+    title.style.setProperty("color", "red");
+    console.log("color changed to red");
     title.style.setProperty("color", "black");
-    console.log("AHHHHHHHH");
+    console.log("color changed back to black!");
 }
