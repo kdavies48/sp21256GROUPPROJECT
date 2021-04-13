@@ -42,4 +42,7 @@ let clothing = {
 console.log(clothing);
 
 let clothingArray = {clothing};
-console.log(clothingArray);
+
+for (let i = 0; i < clothingArray.length; i++){
+    console.log(i);
+}
