@@ -7,4 +7,4 @@
     Faith Bacci: Homepage, Navbar, About Us, Mission Statement, Benefits, Sources, Website visits counter API
     Kaelynn Davies: Women's Clothing, Members
     Chris Moreno: Men's Clothing
-    Madison Schmitt: 
+    Madison Schmitt: Children's Clothing
