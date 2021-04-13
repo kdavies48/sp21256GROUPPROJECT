@@ -1,50 +1,33 @@
 $(document).ready(function() {
     console.log("success");
-    newMember();
 })
 
-function verify(){
-    
-    if (window.confirm("Would you like to become a member of Fair Fashion?")){
-        var name = prompt("Please enter your name", "John Doe");
+function verify(name, birthday, email, password){
+        
         if (name == null || name == ""){
             alert("No name submitted.");
         }
-        else {
-            var birthday = prompt("Please enter your birthday", "MM/DD/YYYY");
-            if (birthday == null || birthday == ""){
-                alert("No birthday entered.");
-                birthday;
-            }
-            else{
-                var email = prompt("Please enter your email", "johndoe@gmail.com");
-                if (email == null || email ==""){
-                    alert("No email entered.");
-                    email;
-                }
-                else{
-                    var password = prompt("Please enter a password", "*********");
-                    
-                    if (password == null || password == ""){
-                        alert("No password entered.");
-                    }
-                    else {
-                        alert("Welcome to Fair Fashion "+ usersName +"!");
-                        newMember(name, birthday, email, password);
-                        $("button").css("color", "blue");
-                        $("#memberButton").innerHTML("Welcome");
-                    }
-                    
-                }
-            }
+        
+        if (birthday == null || birthday == ""){
+            alert("No birthday entered.");
         }
-    }
-    else {
-        alert("You can sign up at any moment.");
-    }
+        
+        if (email == null || email ==""){
+            alert("No email entered.");
+        }
+                    
+        if (password == null || password == ""){
+            alert("No password entered.");
+        }
 }
-function newMember(name, birthday, email, password){
-    var members = new Array();
+
+function newMember(){
+    var name = $("input#name").val(); //adapted from https://stackoverflow.com/questions/27824908/how-to-get-form-input-using-jquery 
+    var birthday = $("input#bday").val();
+    var email = $("input#email").val();
+    var password = $("input#password").val();   
+    verify(name, birthday, email, password);
+    var members = [];
     var newMember = {
         usersName: name,
         usersBirthday: birthday,
@@ -52,6 +35,7 @@ function newMember(name, birthday, email, password){
         usersPassword: password
     };
     members.push(newMember);
+    alert("Welcome to Fair Fashion "+ usersName +"!");
+    $("button").css("color", "blue");
+    $("#memberButton").innerHTML("Welcome");
 }
-    
-

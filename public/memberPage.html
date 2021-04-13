@@ -5,9 +5,9 @@
   <title>Fair Fashion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="/stylesheets/womensStyle.css">
+  <link rel="stylesheet" href="/stylesheets/memberStyles.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <script src="https://use.fontawesome.com/739fb2292b.js"></script>
   <script src ="javascripts/membersScript.js" defer></script>
@@ -66,4 +66,23 @@
   </div>
 
   <div>
-    <button id = "memberButton" onclick="verify()">Become a Member</button>
+<table>
+<tr>
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name"><br><br>
+</tr>
+<tr>
+    <label for="bday">Birthday: </label>
+    <input type="date" id="bday" name="bday"><br><br>
+</tr>
+<tr>
+    <label for="email">Email: </label>
+    <input type="url" id="email" name="email"><br><br>
+</tr>
+<tr>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+</tr>
+    <button id = "memberButton" onclick="newMember()">Become a Member</button>
+</table>
+  </div>

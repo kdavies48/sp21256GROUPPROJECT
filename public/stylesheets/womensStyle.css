@@ -7,10 +7,8 @@ h1{
     word-spacing: 40px;
     font-weight: 100;
     font-size: 32px;
-    position:relative; 
+    text-align:center;
     left: 520px;
-    width: fit-content;
-    height: fit-content;
     top: 15px;
   }
   .womensTypes:hover {
