@@ -50,3 +50,14 @@
     text-align: center;
     font-size: 15px;
 }
+
+#mensSearchContainer {
+    border: solid black 2px;
+    background-color: lightblue;
+    position: absolute;
+    height: 700px;
+    width: fit-content;
+    left: 190px;
+    margin: auto;
+    bottom: 15px;
+}
