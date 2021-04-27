@@ -27,6 +27,7 @@ function newMember(){
     var email = $("input#email").val();
     var password = $("input#password").val();   
     verify(name, birthday, email, password);
+    verifyEmail(email);
     var members = [];
     var newMember = {
         usersName: name,
@@ -38,4 +39,11 @@ function newMember(){
     alert("Welcome to Fair Fashion "+ usersName +"!");
     $("button").css("color", "blue");
     $("#memberButton").innerHTML("Welcome");
+}
+
+function verifyEmail(email){
+    $.ajax({
+        method: 'PUT',
+
+    })
 }
