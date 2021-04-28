@@ -83,6 +83,22 @@
     <label for="password">Password:</label>
     <input type="password" id="password" name="password"><br><br>
 </tr>
+<tr>
     <button id = "memberButton" onclick="newMember()">Become a Member</button>
+</tr>
+<tr>
+  <button id = "viewMembershipButton" onclick = "viewMember()">View Membership</button>
+  <div id = "verifyLogin" title = "Login"><p></p></div>
+</tr>
 </table>
+  </div>
+  <div id="dialog-form" title="Verify Login">
+    <form>
+      <fieldset>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+      </fieldset>
+    </form>
   </div>
