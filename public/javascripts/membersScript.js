@@ -1,5 +1,6 @@
 $(document).ready(function() {
     console.log("success");
+    //doAjaxRequest();
 })
 
 function verify(name, birthday, email, password){
@@ -39,3 +40,12 @@ function newMember(){
     $("button").css("color", "blue");
     $("#memberButton").innerHTML("Welcome");
 }
+
+var settings = {
+    "url": "https://api.eva.pingutil.com/email?email=faithbacci@aol.com",
+    "method": "GET",
+    "timeout": 0,
+  };
+  $.ajax(settings).done(function (response) {
+    console.log(response);
+  });
