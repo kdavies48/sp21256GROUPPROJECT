@@ -1,5 +1,6 @@
 $(document).ready(function() {
     console.log("success");
+    //doAjaxRequest();
 })
 
 function verify(name, birthday, email, password){
@@ -36,8 +37,6 @@ function newMember(){
     };
     $.ajax({method: 'POST', data: newMember});
     alert("Welcome to Fair Fashion "+ usersName +"!");
-}
-
 
 function viewMembership(){
     member = $.ajax({method: 'GET', url: '/'+ $('#emailDesired').val()});
