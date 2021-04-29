@@ -28,20 +28,15 @@ function newMember(){
     var email = $("input#email").val();
     var password = $("input#password").val();   
     verify(name, birthday, email, password);
-    var members = [];
+    verifyEmail(email);
     var newMember = {
         usersName: name,
         usersBirthday: birthday,
         usersEmail: email,
         usersPassword: password
     };
-    members.push(newMember);
+    $.ajax({method: 'POST', data: newMember});
     alert("Welcome to Fair Fashion "+ usersName +"!");
-    $("button").css("color", "blue");
-    $("#memberButton").innerHTML("Welcome");
-}
-
-
 
 function viewMembership(){
     member = $.ajax({method: 'GET', url: '/'+ $('#emailDesired').val()});

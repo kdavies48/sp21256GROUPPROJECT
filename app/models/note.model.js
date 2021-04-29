@@ -1,6 +1,6 @@
-const mongoose = require('mongoose'); //copied from https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/ 
+const mongoose = require('mongoose'); //adapted from https://www.callicoder.com/node-js-express-mongodb-restful-crud-api-tutorial/ 
 
-const NoteSchema = mongoose.Schema({
+const MemberSchema = mongoose.Schema({
     name: {
         desc: "The member's name",
         trim: true,
@@ -29,4 +29,4 @@ const NoteSchema = mongoose.Schema({
     timestamps: true
 });
 
-module.exports = mongoose.model('Note', NoteSchema);
+module.exports = mongoose.model('Member', MemberSchema);
