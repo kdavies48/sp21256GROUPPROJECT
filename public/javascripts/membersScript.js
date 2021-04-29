@@ -1,5 +1,6 @@
 $(document).ready(function() {
     console.log("success");
+    //doAjaxRequest();
 })
 
 function verify(name, birthday, email, password){
