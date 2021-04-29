@@ -5,6 +5,6 @@
 
 2. Contributions
     Faith Bacci: Homepage, Navbar, About Us, Mission Statement, Benefits, Sources, Website visits counter API
-    Kaelynn Davies: Women's Clothing, Members
+    Kaelynn Davies: Women's Clothing, Members, CRUD
     Chris Moreno: Men's Clothing
     Madison Schmitt: Children's Clothing
