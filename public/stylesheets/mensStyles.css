@@ -12,10 +12,9 @@
     font-weight: 100;
     font-size: 32px;
     position: relative;
-    left: 620px;
     width: fit-content;
     height: fit-content;
-    top: -20px;
+    margin: auto;
 }
 
 #mensMenu > li:hover {
