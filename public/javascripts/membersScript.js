@@ -54,7 +54,7 @@ function deleteMember(){
 }
 $("button").css("color", "blue");
 $("#memberButton").innerHTML("Welcome");
-}
+
 
 var settings = {
 "url": "https://api.eva.pingutil.com/email?email=faithbacci@aol.com",
