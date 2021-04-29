@@ -92,13 +92,25 @@
 </tr>
 </table>
   </div>
-  <div id="dialog-form" title="Verify Login">
+  <div id="verify-login">
     <form>
       <fieldset>
         <label for="email">Email</label>
-        <input type="text" name="email" id="email">
+        <input type="text" name="email" id="emailDesired">
         <label for="password">Password</label>
-        <input type="password" name="password" id="password">
+        <input type="password" name="password" id="passwordDesired">
       </fieldset>
     </form>
+  </div>
+  <div id = "individual-member-page">
+    <p id = "usernameLabel">Name</p>
+    <p id = "username"></p>
+    <p id = "userbdayLabel">Birthday</p>
+    <p id = "userbday"></p>
+    <p id = "useremailLabel">Email</p>
+    <p id = "useremail"></p>
+    <p id = "userpasswordLabel">Password</p>
+    <p id = "userpassword"></p>
+    <button id = "updateMemberButton" onclick="updateMember()">Update Information</button>
+    <button id = "deleteMemberButton" onclick="deleteMember()">Delete Membership</button>
   </div>

@@ -2,13 +2,13 @@ module.exports = (app) => {//copied from https://www.callicoder.com/node-js-expr
     const notes = require('../controllers/note.controller.js.js');
 
     // Create a new Note
-    app.post('/memberPage.html', notes.create);
+    app.post('/', notes.create);
     // Retrieve a single Note with noteId
-    app.get('/memberPage.html/:email', notes.findOne);
+    app.get('/:email', notes.findOne);
 
     // Update a Note with noteId
-    app.put('/memberPage.html/:email', notes.update);
+    app.put('/:email', notes.update);
 
     // Delete a Note with noteId
-    app.delete('/memberPage.html/:email', notes.delete);
+    app.delete('/:email', notes.delete);
 }

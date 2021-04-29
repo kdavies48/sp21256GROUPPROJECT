@@ -1,6 +1,5 @@
 $(document).ready(function() {
     console.log("success");
-    $(#)
 })
 
 function verify(name, birthday, email, password){
@@ -29,48 +28,27 @@ function newMember(){
     var password = $("input#password").val();   
     verify(name, birthday, email, password);
     verifyEmail(email);
-    var members = [];
     var newMember = {
         usersName: name,
         usersBirthday: birthday,
         usersEmail: email,
         usersPassword: password
     };
-    members.push(newMember);
+    $.ajax({method: 'POST', data: newMember});
     alert("Welcome to Fair Fashion "+ usersName +"!");
-    $("button").css("color", "blue");
-    $("#memberButton").innerHTML("Welcome");
 }
 
-function verifyEmail(email){
-    $.ajax({
-        method: 'PUT',
-
-    })
-}
 
 function viewMembership(){
-    dialog = $( "#dialog-form" ).dialog({
-        autoOpen: false,
-        height: 400,
-        width: 350,
-        modal: true,
-        buttons: {
-          "View account": $.ajax({method: 'GET', app.get()}),
-          Cancel: function() {
-            dialog.dialog( "close" );
-          }
-        }
+    member = $.ajax({method: 'GET', url: '/'+ $('#emailDesired').val()});
     }
+    
 
-
-/*$( function() {
-    var dialog, form,
- 
-      // From http://www.whatwg.org/specs/web-apps/current-work/multipage/states-of-the-type-attribute.html#e-mail-state-%28type=email%29
-      email = $( "#email" ),
-      password = $( "#password" ),
-      allFields = $( [] ).add( email ).add( password ),
-});
-
-*/
+function updateMembership(){
+    member = $.ajax({method: 'PUT', url: '/' + $('#emailDesired').val()});
+}
+function deleteMember(){
+    if (confirm("Delete this user?")){
+        $.ajax({method: 'DELETE', url:'/'+$('#emailDesired').val()});
+    }
+}

@@ -45,11 +45,11 @@ exports.findOne = (req, res) => {
 // Update a note identified by the noteId in the request
 exports.update = (req, res) => {
 // Validate desired update field
-/*if(!req.body.content) {
+if(!req.body.content) {
     return res.status(400).send({
         message: "Note content can not be empty"
     });
-}*/
+}
 
 // Find note and update it with the request body
 Note.findByIdAndUpdate(req.params.email, {
@@ -59,18 +59,18 @@ Note.findByIdAndUpdate(req.params.email, {
 .then(note => {
     if(!email) {
         return res.status(404).send({
-            message: "Member not found with id " + req.params.noteId
+            message: "Member not found with email" + req.params.email
         });
     }
     res.send(note);
 }).catch(err => {
     if(err.kind === 'ObjectId') {
         return res.status(404).send({
-            message: "Note not found with id " + req.params.noteId
+            message: "Note not found with id " + req.params.email
         });                
     }
     return res.status(500).send({
-        message: "Error updating note with id " + req.params.noteId
+        message: "Error updating note with id " + req.params.email
     });
 });
 
@@ -95,5 +95,5 @@ exports.delete = (req, res) => {
         return res.status(500).send({
             message: "Could not delete member with email " + req.params.email
         });
-    });
-};
+    })
+}}
